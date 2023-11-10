@@ -20923,7 +20923,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Image_set_alphaHitTestMinimumThreshold_m
 		L_7 = Sprite_get_texture_mEEA6640C1B5D38F84CB64C775B201D7D9F48E045(L_6, NULL);
 		NullCheck(L_7);
 		bool L_8;
-		L_8 = VirtualFuncInvoker0< bool >::Invoke(8, L_7);
+		L_8 = VirtualFuncInvoker0< bool >::Invoke(10, L_7);
 		G_B4_0 = ((((int32_t)L_8) == ((int32_t)0))? 1 : 0);
 		goto IL_003c;
 	}
@@ -27367,7 +27367,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Image_U3Cset_spriteU3Eg__SpriteSupportsA
 		L_10 = Sprite_get_texture_mEEA6640C1B5D38F84CB64C775B201D7D9F48E045(L_9, NULL);
 		NullCheck(L_10);
 		bool L_11;
-		L_11 = VirtualFuncInvoker0< bool >::Invoke(8, L_10);
+		L_11 = VirtualFuncInvoker0< bool >::Invoke(10, L_10);
 		G_B5_0 = ((int32_t)(L_11));
 		goto IL_004c;
 	}
