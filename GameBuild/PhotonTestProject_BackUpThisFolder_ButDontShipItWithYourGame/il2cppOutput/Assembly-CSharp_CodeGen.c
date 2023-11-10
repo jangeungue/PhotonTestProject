@@ -12,6 +12,8 @@
 
 
 
+extern void Billboard_Update_mCD095638A5AD933D58CA32837CE80514342F96BB (void);
+extern void Billboard__ctor_m1925ECB0BA6BD6388284FD8AF4335FC003E6E390 (void);
 extern void Gun__ctor_m55BE2F29049D4DD5E4B1201A5D6B1BC7B61026E4 (void);
 extern void GunInfo__ctor_m623484C4A43824F683D2D8A7C525EAFAB1B86E6B (void);
 extern void Item__ctor_m741D59B05082743C60D2F1149112B571E89CAFAF (void);
@@ -89,6 +91,11 @@ extern void SpawnManager_GetSpawnpoint_mE2587FC24A872842E85A2DD54E077331D2D842A1
 extern void SpawnManager__ctor_m8DD503A0FFE79FA38CF0B7F013E54D24A04D166A (void);
 extern void Spawnpoint_Awake_m9B9C5B8541245D4C3CBA6D0520DC6048D3A58E78 (void);
 extern void Spawnpoint__ctor_m76B20BED223436B4C9C840F0749B39D4D74BB5DC (void);
+extern void UsernameDisplay_Start_m4A277919AC98CF97807EB936766C03FBCE6DDC46 (void);
+extern void UsernameDisplay__ctor_m7C44847635421C54BB4ED0C68AEC0440A27BEB5D (void);
+extern void PlayerNameManager_Start_m61A8F84C4BC6C818306A7025B771D2A296AB7A6E (void);
+extern void PlayerNameManager_OnUsernameInputValueChanged_m2E67F16F153EFEA521267E4BEA6BD51E9DE1EDB0 (void);
+extern void PlayerNameManager__ctor_m449DCCEB2A11A9B5CAAA7ECFDB689D70C26A93D3 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
 extern void AppSettingsExtensions_GetChatSettings_mEE685D01C4B553F55E8016FFE255717777E8975E (void);
@@ -157,8 +164,10 @@ extern void TextToggleIsOnTransition_OnValueChanged_m5938ADE42C6A8502F7D225F42C9
 extern void TextToggleIsOnTransition_OnPointerEnter_m94378570919CDF3B8C15622F21D0B0B7FD7956B1 (void);
 extern void TextToggleIsOnTransition_OnPointerExit_m4BB2859E42DE14373D78A2217D72EB17B3FB9D28 (void);
 extern void TextToggleIsOnTransition__ctor_m31BCC4091B72C664D8E1B13777EF1D56DFAC5CDA (void);
-static Il2CppMethodPointer s_methodPointers[148] = 
+static Il2CppMethodPointer s_methodPointers[155] = 
 {
+	Billboard_Update_mCD095638A5AD933D58CA32837CE80514342F96BB,
+	Billboard__ctor_m1925ECB0BA6BD6388284FD8AF4335FC003E6E390,
 	NULL,
 	Gun__ctor_m55BE2F29049D4DD5E4B1201A5D6B1BC7B61026E4,
 	GunInfo__ctor_m623484C4A43824F683D2D8A7C525EAFAB1B86E6B,
@@ -239,6 +248,11 @@ static Il2CppMethodPointer s_methodPointers[148] =
 	SpawnManager__ctor_m8DD503A0FFE79FA38CF0B7F013E54D24A04D166A,
 	Spawnpoint_Awake_m9B9C5B8541245D4C3CBA6D0520DC6048D3A58E78,
 	Spawnpoint__ctor_m76B20BED223436B4C9C840F0749B39D4D74BB5DC,
+	UsernameDisplay_Start_m4A277919AC98CF97807EB936766C03FBCE6DDC46,
+	UsernameDisplay__ctor_m7C44847635421C54BB4ED0C68AEC0440A27BEB5D,
+	PlayerNameManager_Start_m61A8F84C4BC6C818306A7025B771D2A296AB7A6E,
+	PlayerNameManager_OnUsernameInputValueChanged_m2E67F16F153EFEA521267E4BEA6BD51E9DE1EDB0,
+	PlayerNameManager__ctor_m449DCCEB2A11A9B5CAAA7ECFDB689D70C26A93D3,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 	AppSettingsExtensions_GetChatSettings_mEE685D01C4B553F55E8016FFE255717777E8975E,
@@ -308,8 +322,10 @@ static Il2CppMethodPointer s_methodPointers[148] =
 	TextToggleIsOnTransition_OnPointerExit_m4BB2859E42DE14373D78A2217D72EB17B3FB9D28,
 	TextToggleIsOnTransition__ctor_m31BCC4091B72C664D8E1B13777EF1D56DFAC5CDA,
 };
-static const int32_t s_InvokerIndices[148] = 
+static const int32_t s_InvokerIndices[155] = 
 {
+	5330,
+	5330,
 	0,
 	5330,
 	5330,
@@ -390,6 +406,11 @@ static const int32_t s_InvokerIndices[148] =
 	5330,
 	5330,
 	5330,
+	5330,
+	5330,
+	5330,
+	5330,
+	5330,
 	7918,
 	5330,
 	7582,
@@ -463,7 +484,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	148,
+	155,
 	s_methodPointers,
 	0,
 	NULL,
