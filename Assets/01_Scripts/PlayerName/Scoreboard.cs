@@ -8,6 +8,7 @@ public class Scoreboard : MonoBehaviourPunCallbacks
 {
     [SerializeField] Transform container;
     [SerializeField] GameObject scoreboardPrefab;
+    [SerializeField] CanvasGroup canvasGroup;
 
     Dictionary<Player, ScoreboardItem> scoreboardItems = new Dictionary<Player, ScoreboardItem>();
 
@@ -40,5 +41,20 @@ public class Scoreboard : MonoBehaviourPunCallbacks
     {
         Destroy(scoreboardItems[player].gameObject);
         scoreboardItems.Remove(player);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (canvasGroup.alpha == 0)
+            {
+                canvasGroup.alpha = 1;
+            }
+            else
+            {
+                canvasGroup.alpha = 0;
+            }
+        }      
     }
 }

@@ -625,6 +625,7 @@ GameObject:
   - component: {fileID: 972923584}
   - component: {fileID: 972923585}
   - component: {fileID: 972923586}
+  - component: {fileID: 972923587}
   m_Layer: 5
   m_Name: Scoreboard
   m_TagString: Untagged
@@ -691,6 +692,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   container: {fileID: 972923584}
   scoreboardPrefab: {fileID: 8130652145787960206, guid: a4c1344cf39d85f49a7b9de8ac41b18c, type: 3}
+  canvasGroup: {fileID: 972923587}
+--- !u!225 &972923587
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972923583}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &1108105718
 GameObject:
   m_ObjectHideFlags: 0

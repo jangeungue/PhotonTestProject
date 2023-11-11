@@ -47,6 +47,7 @@ MonoBehaviour:
   - PlayRandomSoundRPC
   - PlaySoundRPC
   - SetVolumeSFXRPC
+  - RPC_GetKill
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0
