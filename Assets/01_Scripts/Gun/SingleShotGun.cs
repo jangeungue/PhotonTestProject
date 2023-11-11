@@ -4,6 +4,7 @@ using Photon.Pun;
 public class SingleShotGun : Gun
 {
     [SerializeField] Camera cam;
+    [SerializeField] AudioManager audioManager;
 
     PhotonView PV;
 
@@ -26,6 +27,8 @@ public class SingleShotGun : Gun
             hit.collider.gameObject.GetComponent<IDamageable>()?.TakeDamage(((GunInfo)itemInfo).damage);
             PV.RPC("RPC_Shoot", RpcTarget.All, hit.point, hit.normal);
         }
+
+        audioManager.PlaySound("MP_Gun Fire", 1f);
     }
 
     [PunRPC]
