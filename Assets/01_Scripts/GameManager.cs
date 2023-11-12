@@ -34,5 +34,7 @@ public class GameManager : MonoBehaviour
     {
         PhotonNetwork.LeaveRoom();
         PhotonNetwork.LoadLevel(0);
+
+
     }
 }

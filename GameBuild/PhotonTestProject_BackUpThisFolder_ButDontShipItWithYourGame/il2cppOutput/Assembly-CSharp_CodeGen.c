@@ -49,6 +49,7 @@ extern void GameManager_Awake_m4B6E8E2AF58C95C9A2A0C4637A34AE0892CB637F (void);
 extern void GameManager_Start_m87A71D65F3171A58DBDDBFB03832ADA65643D0E2 (void);
 extern void GameManager_SetHideCusor_mF48C0C9331F272C690D98E445960D6603D1F9877 (void);
 extern void GameManager_SetShowCusor_m6BF1F7654824A80E01D8A258464E27EC36EB7591 (void);
+extern void GameManager_GoMainRoom_m2AF7E9D4560E5CD866B3576660A5294900CEB9A8 (void);
 extern void GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368 (void);
 extern void Gun__ctor_m55BE2F29049D4DD5E4B1201A5D6B1BC7B61026E4 (void);
 extern void GunInfo__ctor_m623484C4A43824F683D2D8A7C525EAFAB1B86E6B (void);
@@ -205,7 +206,7 @@ extern void TextToggleIsOnTransition_OnValueChanged_m5938ADE42C6A8502F7D225F42C9
 extern void TextToggleIsOnTransition_OnPointerEnter_m94378570919CDF3B8C15622F21D0B0B7FD7956B1 (void);
 extern void TextToggleIsOnTransition_OnPointerExit_m4BB2859E42DE14373D78A2217D72EB17B3FB9D28 (void);
 extern void TextToggleIsOnTransition__ctor_m31BCC4091B72C664D8E1B13777EF1D56DFAC5CDA (void);
-static Il2CppMethodPointer s_methodPointers[196] = 
+static Il2CppMethodPointer s_methodPointers[197] = 
 {
 	Menu_Open_m5BF8AC7F39ADEF2BFD6C397AB062A6F6AC2B1195,
 	Menu_Close_m4571A9BDEB7E50AD3A0AF107F7025188FB43320B,
@@ -244,6 +245,7 @@ static Il2CppMethodPointer s_methodPointers[196] =
 	GameManager_Start_m87A71D65F3171A58DBDDBFB03832ADA65643D0E2,
 	GameManager_SetHideCusor_mF48C0C9331F272C690D98E445960D6603D1F9877,
 	GameManager_SetShowCusor_m6BF1F7654824A80E01D8A258464E27EC36EB7591,
+	GameManager_GoMainRoom_m2AF7E9D4560E5CD866B3576660A5294900CEB9A8,
 	GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368,
 	NULL,
 	Gun__ctor_m55BE2F29049D4DD5E4B1201A5D6B1BC7B61026E4,
@@ -404,7 +406,7 @@ static Il2CppMethodPointer s_methodPointers[196] =
 	TextToggleIsOnTransition_OnPointerExit_m4BB2859E42DE14373D78A2217D72EB17B3FB9D28,
 	TextToggleIsOnTransition__ctor_m31BCC4091B72C664D8E1B13777EF1D56DFAC5CDA,
 };
-static const int32_t s_InvokerIndices[196] = 
+static const int32_t s_InvokerIndices[197] = 
 {
 	5331,
 	5331,
@@ -436,6 +438,7 @@ static const int32_t s_InvokerIndices[196] =
 	5331,
 	4344,
 	4344,
+	5331,
 	5331,
 	5331,
 	5331,
@@ -607,7 +610,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	196,
+	197,
 	s_methodPointers,
 	0,
 	NULL,
