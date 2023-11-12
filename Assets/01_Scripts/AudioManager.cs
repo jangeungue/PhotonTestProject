@@ -128,7 +128,7 @@ public class AudioManager : MonoBehaviourPunCallbacks
         bgmPlayer.Stop();
     }
 
-    #region �ɼǿ��� ��������
+    #region SetVolume
 
     [SerializeField]
     Slider sliderToBGM;
@@ -159,7 +159,7 @@ public class AudioManager : MonoBehaviourPunCallbacks
 
         sfxPlayer.volume = masterVolumeSFX;
 
-        PV.RPC("SetVolumeSFXRPC", RpcTarget.All, masterVolumeSFX);
+        PV.RPC("SetVolumeSFXRPC", PV.Owner, masterVolumeSFX);
     }
 
     [PunRPC]
@@ -167,11 +167,9 @@ public class AudioManager : MonoBehaviourPunCallbacks
     {
         masterVolumeSFX = volume;
 
-        // 로컬 플레이어의 경우만 자신의 소리를 낮춥니다.
-        if (PV.IsMine)
-        {
-            sfxPlayer.volume = masterVolumeSFX;
-        }
+
+        sfxPlayer.volume = masterVolumeSFX;
+
     }
 
 
