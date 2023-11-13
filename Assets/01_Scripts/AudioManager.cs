@@ -1,7 +1,5 @@
 ﻿using Photon.Pun;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +10,6 @@ public class AudioManager : MonoBehaviourPunCallbacks
     public float masterVolumeBGM = 1f;
     public float masterVolumeSFX = 1f;
 
-    [SerializeField] AudioClip BGMClip; // ����� �ҽ��� ����.
     [SerializeField] AudioClip[] audioClip; // ����� �ҽ��� ����.
 
     Dictionary<string, AudioClip> audioClipsDic;
@@ -39,24 +36,12 @@ public class AudioManager : MonoBehaviourPunCallbacks
     void AwakeAfter()
     {
         sfxPlayer = GetComponent<AudioSource>();
-        SetupBGM();
 
         audioClipsDic = new Dictionary<string, AudioClip>();
         foreach (AudioClip a in audioClip)
         {
             audioClipsDic.Add(a.name, a);
         }
-    }
-
-    void SetupBGM()
-    {
-        if (BGMClip == null) return;
-
-        GameObject child = new GameObject("BGM");
-        child.transform.SetParent(transform);
-        bgmPlayer = child.AddComponent<AudioSource>();
-        bgmPlayer.clip = BGMClip;
-        bgmPlayer.volume = masterVolumeBGM;
     }
 
 
@@ -122,7 +107,7 @@ public class AudioManager : MonoBehaviourPunCallbacks
         return l_obj;
     }
 
-    // �ַ� ���� ����� ������ ����.
+    
     public void StopBGM()
     {
         bgmPlayer.Stop();
@@ -149,7 +134,7 @@ public class AudioManager : MonoBehaviourPunCallbacks
         if (PV.IsMine)
         {
             SetMyVolumeSFXRPC(masterVolumeSFX);
-        }        
+        }
     }
 
     void SetMyVolumeSFXRPC(float volume)
