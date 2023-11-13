@@ -24,15 +24,6 @@ public class AudioManager : MonoBehaviourPunCallbacks
         AwakeAfter();
     }
 
-    void Start()
-    {
-        if (bgmPlayer != null)
-        {
-            bgmPlayer.loop = true;
-            bgmPlayer.Play();
-        }
-    }
-
     void AwakeAfter()
     {
         sfxPlayer = GetComponent<AudioSource>();
